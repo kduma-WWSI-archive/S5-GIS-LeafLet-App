@@ -6,7 +6,6 @@
          :center="center"
          :maxBounds="[[48.7515694397423, 13.4999258093913],[55.0963044138849, 25.0252495412993]]"
          class="min-w-full min-h-screen">
-    <!--<l-icondefault></l-icondefault>-->
 
     <l-control-layers position="topright"></l-control-layers>
 
@@ -93,23 +92,9 @@
     </l-wms-tile-layer>
 
   </l-map>
-
-
-
-  <!--<l-map :zoom=10 :center="initialLocation" class="min-w-full min-h-screen">-->
-    <!--<v-icondefault></v-icondefault>-->
-    <!--<l-tile-layer url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"></l-tile-layer>-->
-    <!--<v-marker-cluster :options="clusterOptions" @clusterclick="click()">-->
-      <!--<l-marker v-for="l in locations" :key="l.id" :lat-lng="l.latlng" :icon="icon">-->
-        <!--<l-popup :content="l.text"></l-popup>-->
-      <!--</l-marker>-->
-    <!--</v-marker-cluster>-->
-  <!--</l-map>-->
 </template>
 
 <script>
-
-
   export default {
     components: {},
     data () {
@@ -124,13 +109,6 @@
       }
     },
     mounted() {
-    //   setTimeout(() => {
-    //     console.log('done')
-    //     this.$nextTick(() =>{
-    //       this.clusterOptions = { disableClusteringAtZoom: 11 }
-    //     });
-    //   }, 5000);
-
       this.pobierzPaczkomaty();
     },
     computed: {
@@ -165,7 +143,6 @@
 </script>
 
 <style>
-  /*@import "~leaflet/dist/leaflet.css";*/
   @import "~leaflet.markercluster/dist/MarkerCluster.css";
   @import "~leaflet.markercluster/dist/MarkerCluster.Default.css";
 </style>
