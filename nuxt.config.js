@@ -14,7 +14,8 @@ module.exports = {
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://unpkg.com/leaflet@1.2.0/dist/leaflet.css' }
     ]
   },
 
@@ -27,13 +28,14 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    '~/assets/css/tailwind.css'
+    '~/assets/css/tailwind.css',
   ],
 
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    {src: '~/plugins/vue-leaflet', ssr: false },
   ],
 
   /*
@@ -42,9 +44,6 @@ module.exports = {
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
-
-    // Doc: https://github.com/schlunsen/nuxt-leaflet
-    'nuxt-leaflet',
   ],
   /*
   ** Axios module configuration
