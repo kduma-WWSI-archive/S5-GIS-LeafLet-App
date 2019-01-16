@@ -1,59 +1,17 @@
 <template>
   <section>
-    <!--<div>-->
-      <!--<logo/>-->
-      <!--<h1 class="title">-->
-        <!--LeafLet7763-->
-      <!--</h1>-->
-      <!--<h2 class="subtitle">-->
-        <!--LeafLet App 7763-->
-      <!--</h2>-->
-      <!--<div class="links">-->
-        <!--<a-->
-          <!--href="https://nuxtjs.org/"-->
-          <!--target="_blank"-->
-          <!--class="button&#45;&#45;green">Documentation</a>-->
-        <!--<a-->
-          <!--href="https://github.com/nuxt/nuxt.js"-->
-          <!--target="_blank"-->
-          <!--class="button&#45;&#45;grey">GitHub</a>-->
-      <!--</div>-->
-      <my-map></my-map>
-        <!--<no-ssr>-->
-
-        <!--</no-ssr>-->
-
-    <!--</div>-->
+    <my-map></my-map>
   </section>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
 import MyMap from '~/components/MyMap.vue'
 
 export default {
 
   components: {
-    Logo,
     MyMap,
-    //
   },
-  data: () => ({
-    // map: null,
-    // paczkomaty: null,
-    // openStreetMaps: true
-  }),
-  // mounted () {
-  //   this.$nextTick(() => {
-  //     const checkMapObject = setInterval(() => {
-  //       if (this.$refs.myMap) {
-  //         this.map = this.$refs.myMap.mapObject;
-  //         clearInterval(checkMapObject)
-  //       }
-  //     }, 100)
-  //   });
-  //   this.pobierzPaczkomaty();
-  // },
 }
 </script>
 
