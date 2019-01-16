@@ -12,10 +12,13 @@ const VueLeaflet = {
     Vue.component('l-marker', Vue2Leaflet.LMarker);
     Vue.component('l-tile-layer', Vue2Leaflet.LTileLayer);
     Vue.component('l-popup', Vue2Leaflet.LPopup);
+    Vue.component('l-tooltip', Vue2Leaflet.LTooltip);
+    Vue.component('l-polyline', Vue2Leaflet.LPolyline);
     Vue.component('l-control-layers', Vue2Leaflet.LControlLayers);
     Vue.component('l-control-attribution', Vue2Leaflet.LControlAttribution);
     Vue.component('l-control-scale', Vue2Leaflet.LControlScale);
     Vue.component('l-control', Vue2Leaflet.LControl);
+    Vue.component('l-layer-group', Vue2Leaflet.LLayerGroup);
     Vue.component('l-wms-tile-layer', Vue2Leaflet.LWMSTileLayer);
     Vue.component('l-marker-cluster', Vue2LeafletMarkerCluster);
   }
