@@ -1,0 +1,25 @@
+{
+  "name": "LeafLet7763",
+  "version": "1.0.0",
+  "description": "LeafLet App 7763",
+  "author": "Krystian Duma",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.0.0",
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.0.0",
+    "nuxt-leaflet": "0.0.10",
+    "vue2-leaflet-markercluster": "^2.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0",
+    "autoprefixer": "^8.6.4",
+    "tailwindcss": "~0.6.6"
+  }
+}
